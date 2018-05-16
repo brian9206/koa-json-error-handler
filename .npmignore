@@ -1,0 +1,7 @@
+node_modules/
+npm-error.log
+yarn-error.log
+.gitignore
+test.js
+README.md
+yarn.lock
