@@ -1,6 +1,6 @@
 {
   "name": "koa-json-error-handler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple Koa JSON error handler middleware",
   "main": "index.js",
   "repository": "github:brian9206/koa-json-error-handler",
