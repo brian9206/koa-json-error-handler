@@ -22,12 +22,12 @@ module.exports = async function json_error_handler(ctx, next) {
         ctx.body = {
             result: false,
             reason: (() => {
-                if (status >= 500) {
-                    return `HTTP Error ${ctx.status}: ${HttpStatus.getStatusText(ctx.status)}`;
-                }
-    
                 if (err && err.message) {
                     return err.message.toString();
+                }
+
+                if (status >= 500) {
+                    return `HTTP Error ${status}: ${HttpStatus.getStatusText(status)}`;
                 }
     
                 return undefined;
